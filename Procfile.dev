@@ -1,3 +1,5 @@
-web: unset PORT && env RUBY_DEBUG_OPEN=true bin/rails server
 js: yarn build --watch
 css: yarn watch:css
+guard: bundle exec guard start
+redis: redis-server
+sidekiq: bundle exec sidekiq
