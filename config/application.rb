@@ -13,6 +13,10 @@ module RubyStart
     config.active_job.queue_adapter = :sidekiq
     #Rspec for testing
     config.generators.test_framework :rspec
+    
+    config.generators do |g|
+      g.helper false
+    end
 
     # Configuration for the application, engines, and railties goes here.
     #
